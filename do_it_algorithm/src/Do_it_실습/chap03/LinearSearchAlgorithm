@@ -1,0 +1,40 @@
+[p.99]
+
+요솟수가 n인 배열 a에서 값이 key인 요소를 검색하는 코드를 작성하시오.
+
+[내가 작성한 코드]
+int i = 0;
+boolean run = true;
+
+while(run) {
+	if(a[i] == key) {
+		System.out.println(i);
+		break;
+	}
+	
+	i++;
+	
+	if(i >= n) {
+		System.out.println("검색 실패");
+		break;
+	}
+}
+
+[답안 코드]
+int i = 0;
+
+while(true) {
+	if(i == n) {
+		return -1;
+	}
+	
+	if(a[i] == key) {
+		return i;
+	}
+	
+	i++;
+}
+
+[결론]
+1. 결과는 출력하는 것이 아니라 값을 리턴하는 것이다.
+2. 검색을 종료하는 조건을 우선적으로 작성하고, 나머지 코드(i++)는 그 뒤에 작성한다.
