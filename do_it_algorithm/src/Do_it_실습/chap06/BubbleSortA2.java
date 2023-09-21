@@ -1,5 +1,7 @@
 package Do_it_실습.chap06;
 
+// 버블 정렬을 구현한다.
+
 public class BubbleSortA2 {
 
 	public static void bubbleSort(int[] intArr) {

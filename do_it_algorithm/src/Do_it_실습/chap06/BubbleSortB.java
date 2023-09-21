@@ -1,5 +1,7 @@
 package Do_it_실습.chap06;
 
+// 버블 정렬을 구현하되 "멈춤" 으로 개선한다.
+
 public class BubbleSortB {
 	
 	public static int bubbleSort(int[] intArr) {
